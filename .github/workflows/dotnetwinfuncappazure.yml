@@ -36,7 +36,7 @@ jobs:
         popd
 
     - name: 'Run my private task'
-      uses: veerash-ayyagari/serverless-provenance-attest-action@v1.0
+      uses: veerashayyagari/serverless-provenance-attest-action@v1.0
       with:
         milliseconds: 1000
 
