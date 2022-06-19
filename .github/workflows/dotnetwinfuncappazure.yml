@@ -35,6 +35,11 @@ jobs:
         dotnet build --configuration Release --output ./output
         popd
 
+    - name: 'Run my private task'
+      uses: veerash-ayyagari/serverless-provenance-attest-action@v1.0
+      with:
+        milliseconds: 1000
+
     - name: 'Run Azure Functions Action'
       uses: Azure/functions-action@v1
       id: fa
